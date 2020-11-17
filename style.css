@@ -1,0 +1,419 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Varela Round', sans-serif;
+   
+}
+body{
+    background-color: rgb(39, 38, 39);
+}
+/*header*/
+header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right,#c94b4b,#4b134f); 
+    border-bottom: 3px solid white;
+}
+#hddiv1{
+    width: 60%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    
+}
+#hddiv1 li{
+    list-style-type: none;
+    display: inline-block;
+    width:120px;
+    height: 80px;
+   
+   line-height: 80px;
+   text-align: center;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+#hddiv1 li:hover{
+    background-color: rgb(231, 119, 75);
+}
+#hddiv2{
+    width: 35%;
+    height: 100%;
+    
+    float: right;
+    
+}
+#hddiv2 img{
+height: 100%;
+float: right;
+padding-right: 10px;
+
+}
+
+#hddiv2 h1{
+float: right;
+padding-right: 10px;
+padding-top: 20px;
+color: rgb(251, 255, 0);
+
+}
+#hddiv2 h4{
+float: right; 
+padding-right: 10px;
+color: white; 
+font-weight: bolder;
+
+}
+#listdiv{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    float: left;
+    width:150px;
+    
+}
+#listdiv a{
+    text-decoration: none; 
+    display: block;
+    background-color: lightcoral;
+    color: rgba(34, 33, 33, 0.986);
+}
+
+#nosservices:hover #listdiv{
+    display: block;
+    transition: 0.3s;
+}
+
+#listdiv a:hover{
+    background-color: rgb(230, 26, 26);
+    color: lemonchiffon;
+    transition: 0.3s;
+   
+}
+#idpay{
+text-decoration: line-through !important;
+color: gray !important;
+}
+/*main*/
+
+main{
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(to right,#ce8181, #513253); 
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 65% 100%, 35% 100%, 0 90%);
+    margin-bottom: 3px;
+    border-bottom: 3px solid white;
+    position: relative;
+    
+}
+#marticle{
+    width: 70%;
+    height: 1000px;
+    float: right;
+    text-align:center ;
+  
+}
+#marticle #imgart1,#marticle #imgart2{
+width:90%;
+height: 300px;
+margin: 0px auto;
+padding: 0 10px;
+
+}
+
+#marticle #imgart1 img,#marticle #imgart2 img{
+    width: 49%;
+    height: 90%;
+   object-fit: scale-down;
+   display: inline;
+   border-radius: 30px;
+  
+   
+}
+#ardiv{
+    width: 80%;
+    height: 200px;
+    
+    margin:30px auto;
+    color: black;
+    
+}
+#ardiv h2{
+    line-height: 30px; 
+   
+    padding:20px 0px;
+    border-bottom: #fff 3px solid;
+    
+}
+#ardiv p{
+    line-height: 30px; 
+    margin: 10px 20px;
+
+}
+
+#maside{
+    width: 30%;
+    height: 900px;
+    float: left;
+    position: absolute;
+    top:10%;
+    border-right: 3px solid rgba(61, 61, 61, 0.651); 
+    text-align: center;
+    
+}
+#maside #logo{
+    width: 95%;
+    margin-top:20px ;
+    
+} 
+#maside #user{
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#maside form table{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: #333;
+    
+}
+.asinput{
+    width: 60%;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    margin: 5px 0px;
+    background-color: rgb(214, 213, 213);
+    padding-right: 20px;
+    padding-left: 20px;
+    outline: 0px;
+}
+.asinput:focus{
+    background-color: rgba(134, 223, 134, 0.877);
+    color: black;
+    
+}
+.btni{ background:rgba(3, 184, 3, 0.705);}
+.btnl{ background:rgba(6, 128, 243, 0.637)}
+.btni,.btnl{
+    width: 80px;
+    height: 30px;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(214, 213, 213); 
+    outline: 0px;
+}
+.btni:hover,.btnl:hover{
+    background: rgba(145, 59, 19, 0.726);
+    color: white;
+    font-weight:bold ;
+    border: 0.5px solid gray;
+   transition:0.3s;
+}
+
+
+/*footer*/
+footer{
+    width:450px;
+    height: 140px;
+    background-image: linear-gradient(45deg,#e95656,#731e79); 
+   margin-left: auto;
+   margin-right: auto;
+   border-top:3px solid white ;
+   text-align: center;
+   padding-top: 13px;
+   border-bottom-right-radius:50px;
+   border-bottom-left-radius:50px;
+}
+footer img{
+    width: 80px;
+    padding: 10px 5px;
+}
+footer img:hover{
+    transform: scale(1.2);
+}
+@media only screen and ( max-width:1089px){
+    main{
+        
+        clip-path: polygon(0 0, 100% 0%, 100% 93%, 65% 100%, 35% 100%, 0 93%);
+        }
+    #hddiv2{
+        width:55%;  
+    }
+    #hddiv1{
+        width: 45%;
+    }
+    #hddiv1 li{
+        float: left;
+    }
+    footer{
+        width: 35%;
+        height: 110px;
+    }
+    footer img{
+        width: 20%;
+        
+    padding: 2% 1%;
+    }
+    #maside #user{
+        width: 50%;
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+}
+@media only screen and ( max-width:817px){
+    /*header*/
+   
+    header{
+        height:400px;
+        width: 100%;
+        
+    }
+    #hddiv2{
+        width:100%;
+        height: 300px;  
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    #hddiv2 img{
+        
+        height: 190px;
+        float: none;
+        }
+        #hddiv2 h1{
+            float: none;
+            
+            }
+            #hddiv2 h4{
+            float: none; 
+            color: white; 
+            font-weight: bolder;
+            }
+        
+    #hddiv1{
+        width: 100%;
+        height:100px;
+        float: none;
+        text-align: center;  
+        line-height: 100px;  
+        border-top: 3px solid white; 
+        
+    }
+        
+   #hddiv1 li{
+    float: none;
+    width:120px;
+    height: 80px;
+   line-height: 80px;
+   text-align: center; 
+    }
+/*main*/
+main{
+    height:1500px;
+    clip-path: polygon(0 0, 100% 0%, 100% 97%, 65% 100%, 35% 100%, 0 97%);
+    }
+#marticle{
+    width: 100%;
+    float: none;
+   
+    }
+
+#ardiv{
+    margin:auto auto;  
+    }
+#maside{
+    width: 100%;
+    height: 600px;
+    float: none;
+    position: relative;
+    top: -10%;
+    
+    border-top: white 3px solid;
+    }
+    #maside #logo{
+        width: 50%;
+        margin-top:30px ;
+       
+    } 
+ #maside #user{
+        width: 20%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    .asinput{
+        width: 50%;
+        }
+    /*fouter*/
+    footer{
+        width: 50%;
+        height: 110px;
+    }
+    footer img{
+        width: 20%;
+    padding: 2% 1%; 
+    }   
+  }
+  @media only screen and ( max-width:620px)
+  {/*main*/
+    main{
+        width: 100%;
+        height: 2600px;
+        clip-path: polygon(0 0, 100% 0%, 100% 98%, 65% 100%, 35% 100%, 0 98%);
+    }
+    #marticle{
+        width: 100%;
+        height: 2200px;
+        }
+    #marticle #imgart1{
+        width:100%;
+        height:850px;
+        }
+    #marticle #imgart2{
+        width:100%;
+        height: 850px;
+        position: relative; 
+        
+    }
+    #marticle #imgart1 img,#marticle #imgart2 img{
+        width: 95%;
+        height: 400px;
+        display: block;    
+    }
+    #ardiv{
+        width: 90%;
+    }
+    
+        #maside #logo{
+            width: 70%;
+            margin-top:30px ;
+           
+        } 
+     #maside #user{
+            width: 30%;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        .asinput{
+            width: 60%;
+            }
+        /*fouter*/
+        footer{
+            width: 70%;
+            height: 130px;
+        }
+        footer img{
+            width: 20%;
+        padding: 2% 1%; 
+        }   
+    
+
+  
+
+  }
+
